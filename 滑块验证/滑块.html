@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+    <style>
+        .box{
+            background-color: burlywood;
+            width: 300px;
+            height: 30px;
+            position: relative;
+            margin: 50px auto;
+            /* text-align: center; */
+        }
+        .btn{
+            background-color: red;
+            width: 30px;
+            height: 30px;
+            position:absolute;
+            z-index: 5;
+        }
+        .text{
+            line-height: 30px;
+            position:absolute;
+            left:100px;
+            /* z-index: 6; */
+        }
+        .bg{
+            background-color:rgba(45, 106, 163, 0.377) ;
+            height: 30px;
+            position:absolute;
+            
+        }
+		a{
+			margin: 70px 600px;
+/*			color: aliceblue;*/
+			display: inline-block;
+/*			background-color: #333FC0;*/
+			width: 180px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			box-shadow:10px 10px 5px #888;
+			border: #12A81A 1px solid;
+			text-decoration: none;
+		}
+		
+		
+    </style>
+</head>
+<body>
+  
+   <div class="box">
+        <!-- 请向右滑动 -->
+        
+        <!-- 滑块 -->
+        <div class="btn"></div>
+        <div class="text">请向右滑动</div>
+        
+        <div class="bg"></div>
+    </div>
+   
+    
+    <div id="zc">
+    	<a href="#" id="a">滑块通过后进入注册</a>
+    </div>
+    <script src="滑块.js"></script>
+</body>
+</html>

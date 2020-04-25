@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .login{
+            width: 500px;
+            height: 500px;
+            margin: 50px auto;
+            box-shadow: crimson 0px 0px 5px 1px;
+           
+        }
+        .user{
+            float: left;
+            width: 90px;
+            line-height: 30px;
+            text-align: right;
+            padding-right: 5px;
+        }
+        .login ul{
+            padding-top: 30px;
+            float: left;
+        }
+        .login ul li{
+            /* background-color: darkgray; */
+            list-style: none;
+            float: left;
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .login ul li input{
+            width: 290px;
+            height: 30px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            float: left;
+            /* opacity: 1;  */
+            
+        }
+        .login ul li input:focus + div.tips{
+            opacity: 0.5; 
+            display: block;
+        }
+        .tips{
+            position: absolute;
+            left: 400px;
+            right: 0px;
+            padding: 8px;
+            background-color: darkorchid;
+            color: gainsboro;
+            width: 180px;
+            /* //透明 */
+            /* opacity: 0.5;  */
+            display: none;
+        }
+        div.tips:before{
+            position: absolute;
+            left:-10px;
+            margin-top: -10px;
+            
+            top:50%;
+            content: '';
+            width: 0px;
+            height: 0px;
+            border:10px solid transparent;
+            border-right-color: green;
+            border-left: none; 
+        }
+        .text{
+            color: gray;
+            padding:0px 10px;
+        }
+        .btn{
+            margin: 30px 140px;
+        }
+        button{
+            /* margin: 50px 30px; */
+            margin-left: 15px;
+            background-color:brown;
+            color: wheat;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <form action="">
+            <ul>
+                <li>
+                    <span class="user">用户</span>
+                    <input type="text" value="请输入用户名" class="text">
+                    <div class="tips">请输入用户名</div>
+                </li>
+                <li>
+                    <span class="user">密码</span>
+                    <input type="text" value="请输入密码" class="text">
+                    <div class="tips">请输入密码</div>
+                </li>
+                <li>
+                    <span class="user">密码</span>
+                    <input type="text" value="请再次输入密码" class="text">
+                    <div class="tips">请再次输入密码</div>
+                </li>
+                <li>
+                    <span class="user">邮箱</span>
+                    <input type="text" value="请输入邮箱" class="text">
+                    <div class="tips">请再次输入邮箱</div>
+                </li>
+                <li>
+                    <span class="user">昵称</span>
+                    <input type="text" value="请输入昵称" class="text">
+                    <div class="tips">请再次输入你的昵称</div>
+                </li>
+            </ul>
+        </form>
+        <div class="btn">
+            <button>注册</button>
+            <button>我有账号，直接登录</button>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

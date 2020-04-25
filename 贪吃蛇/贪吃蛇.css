@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    position: relative;
+}
+table{
+    /* margin: 100px 300px; */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+td{
+    width: 28px;
+    height: 28px;
+}
+#map{
+    width: 450px;
+    height: 450px;
+    background-color:wheat;
+    /* margin: 100px 300px; */
+}
+#map div{
+    width: 30px;
+    height: 30px;
+    
+}
